@@ -1,0 +1,59 @@
+.highScoresList{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 4rem;
+	font-size: 45px;
+
+
+}
+
+.high-score{
+	font-size: 1.3rem;
+	margin-bottom: 0,5rem;
+}
+
+.high-score:hover{
+	box-shadow: 0px 4px 16px rgba(0,0,0,0.5);
+}
+.container{
+	border: 1px solid black;
+}
+h1,h2,h4{
+	font-family: 'Almendra Display', cursive;
+}
+
+.container-H {
+	background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 16px rgba(0,0,0,0.5);
+}
+
+.next-btn {
+	color: #ffffff;
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+    background: #71b7e6;
+    border-radius: 0.25em;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.next-btn:hover {
+    color: #9b59b6;
+    box-shadow: 0px 4px 16px rgba(0,0,0,0.5);
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #9b59b6, #71b7e6);
+
+}
+
+@media (max-width : 768px){
+	h1,h2,h4 {
+		font-family: 'Yuji Syuku', serif;
+	}
+}

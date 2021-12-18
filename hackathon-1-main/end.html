@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Congrats!</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container" style="display: flex;">
+		<div id="end" class="flex-center flex-column
+		">
+			<h1 id="finalScore">0</h1>
+			<h1 id="totalTime">0</h1>
+			<form>
+				<input type="text" name="username" id="username" placeholder="username"/>
+				<button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)"
+				disabled><h3>Save</h3></button>
+			</form> 
+				<button id="start-btn" class="start-btn btn"><a href="Hackathon.html"><h3>Home</h3></a></button>
+				<button id="next-btn" class="start-btn btn"><a href="HackStart.html"><h3>Play Again</h3></a></button>
+
+		</div>
+	</div>
+<script>
+var music = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  music.play(); 
+} 
+
+function pauseAudio() { 
+  music.pause(); 
+}
+</script>
+	<script src="end.js"></script>
+</body>
+</html>

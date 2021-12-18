@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Hackathon.css">
+	<link rel="stylesheet" type="text/css" href="game.css">
+	<title></title>
+</head>
+<body>
+	<div class="whole">
+	
+        <br>
+
+ 	<div class="container-2" style="margin-left: 7vh;">
+  <div id="audio" class="music">
+            <audio id="myAudio" autoplay>  
+              <source src="video.mp3" type="audio/mp3">
+            </audio>
+
+<button onclick="playAudio()" type="button" class="pmusic">Play Music</button>
+<button onclick="pauseAudio()" type="button" class="pmusic">Pause Music</button> 
+        </div>
+ 		<div id="game" class="justify-center flex-column">
+ 			<div id="hud" class="hud">
+ 				<div id="hud-item">
+ 					<p class="hud-prefix">
+ 						Question
+ 					</p>
+ 					<h1 class="hud-main-text" id="questionCounter">
+ 						
+ 					</h1>
+ 				</div>
+ 				<div id="hud-item">
+ 					<p class="hud-prefix">
+ 						Score
+ 					</p>
+ 					<h1 class="hud-main-text" id="score">
+ 						0
+ 					</h1>
+ 				</div> 		 				
+ 			</div>
+ 			<h2 id="question">What is the answer to this?</h2>
+ 			<div class="choice-container">
+ 				 <p class="choice-text" data-number="1">Choice 1</p>
+ 			</div>
+ 			<div class="choice-container">
+ 				 <p class="choice-text" data-number="2">Choice 2</p>
+ 			</div>
+ 			<div class="choice-container">
+ 				 <p class="choice-text" data-number="3">Choice 3</p>
+ 			</div>
+ 			<div class="choice-container">
+ 				 <p class="choice-text" data-number="4">Choice 4</p>
+ 			</div>
+ 			<div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">0</div>
+            </div>
+            <div class="time_line"></div>
+ 		</div>
+ 	</div>
+<button id="start-btn" class="start-btn btn"><a href="Hackathon.html">Home</a></button>
+</div>
+
+
+
+<script>
+var music = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  music.play(); 
+} 
+
+function pauseAudio() { 
+  music.pause(); 
+}
+</script>
+<script src="gameN.js"></script>
+</body>
+</html>
